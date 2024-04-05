@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            background-color: pink;
+            background-image: url("background.jpg");
+            background-size: cover;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .container {
+            width: 640px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 50px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .heading {
+            color: pink;
+            font-size: 50px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .foto {
+            width: 300px;
+            height: auto;
+            margin-bottom: 30px;
+            animation: pulse 2s infinite;
+        }
+
+        .message {
+            color: pink;
+            font-size: 30px;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .link:hover {
+            background-color: pink;
+            color: white;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+        }
+        .balloon {
+			display: inline-block;
+			width: 100px;
+			height: 100px;
+			background-color: hsl(59, 50%, 58%);
+			border-radius: 50%;
+			position: relative;
+			animation: balloon 4.5s infinite;
+			margin-right: 20px;
+		}
+		.balloon:nth-child(4) {
+			background-color: hsl(59, 50%, 58%);
+			animation-duration: 4.5s;
+		}
+		.balloon:nth-child(5) {
+			background-color: hsl(23, 55%, 57%);
+			animation-duration: 5s;
+		}
+		.balloon:before {
+			content: "";
+			position: absolute;
+			width: 0;
+			height: 0;
+			border-left: 50px solid transparent;
+			border-right: 50px solid transparent;
+			border-top: 100px solid hsl(59, 30%, 52%);
+			left: -50px;
+			top: -100px;
+		}
+		.balloon:nth-child(4):before {
+			border-top-color: hsl(59, 30%, 52%);
+		}
+		.balloon:nth-child(5):before {
+			border-top-color: hsl(23, 44%, 46%);
+		}
+		@keyframes balloon {
+			0%, 100% {
+				-webkit-transform: translate(10px, -10px) rotate(-8deg);
+				transform: translate(10px, -10px) rotate(-8deg);
+			}
+			50% {
+				-webkit-transform: translate(-15px, 10px) rotate(10deg);
+				transform: translate(-15px, 10px) rotate(10deg);
+			}
+		}
+    </style>
+</head>
+<body>
+  <div class="balloon"></div>
+	<div class="balloon"></div>
+	<div class="balloon"></div>
+	<div class="balloon"></div>
+	<div class="balloon"></div>
+    <div class="container">
+        <h1 class="heading">Happy Birthday Biwaa!</h1>
+        <img src="https://suppliesforcandles.co.uk/8235-medium_default/birthday-cake-fragrance-oil.jpg" alt="" class="foto">
+        <p class="message">Semoga Panjang Umur Sehat Selalu, dilancarkan rezekinya jangan lupa sholat gak boleh nakal<br><br>
+          BTW aku gak nyangka loh kamu udah sedewasa ini padahal perasaan kemarin masih bocil hahaha
+        </p>
+
+    </div>
+</body>
+</html>
